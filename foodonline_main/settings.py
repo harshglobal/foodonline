@@ -1,3 +1,4 @@
+from curses.ascii import EM
 from email.policy import default
 from pathlib import Path
 from decouple import config
@@ -132,3 +133,35 @@ MESSAGE_TAGS = {
 }
 
 
+# email configuration
+
+# EMAIL_HOST  = config('EMAIL_HOST')
+# EMAIL_PORT = config('EMAIL_PORT')
+# EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+# EMAIL_HOST_PASSWORD =config('EMAIL_HOST_PASSWORD')
+# EMAIL_USE_TLS = config('EMAIL_USE_TLS')
+
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST = 'smtp-mail.outlook.com'
+# EMAIL_HOST_USER = "harsh.gawande1987@outlook.com"
+# EMAIL_HOST_PASSWORD = "389456@Dad"
+# DEFAULT_FROM_EMAIL = "harsh.gawande1987@outlook.com"
+# SERVER_EMAIL ="harsh.gawande1987@outlook.com"
+
+# EMAIL_USE_TLS = True
+# EMAIL_HOST = 'smtp-mail.outlook.com'
+# EMAIL_HOST_USER =  "harsh.gawande1987@outlook.com"
+# EMAIL_HOST_PASSWORD ="389456@Dad"
+# EMAIL_PORT = 25
+
+EMAIL_HOST =  "smtp-mail.outlook.com"
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "harsh.gawande1987@outlook.com"
+SERVER_EMAIL = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = "foodOnline Marketplace <harsh.gawande1987@outlook.com>"   
+EMAIL_HOST_PASSWORD = "389456@Dad"
+EMAIL_USE_TLS = True
+EMAIL_TIMEOUT = 60
