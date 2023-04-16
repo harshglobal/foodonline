@@ -2,6 +2,7 @@ from django.http import HttpRequest, HttpResponse
 from django.shortcuts import redirect, render
 from django.utils.text import slugify
 from vendor.forms import VendorForm
+from vendor.models import Vendor
 from.models import User, UserProfile
 from accounts.forms import UserForm
 from django.contrib import  messages,auth
@@ -140,7 +141,11 @@ def custDashboard(request):
 @login_required
 @user_passes_test(check_role_vendor)
 def VendorDashboard(request):
-    return render(request,'accounts/vendor_dashboard.html')
+    vendor = Vendor.objects.get(user=request.user)
+    context = {
+        'vendor' :vendor
+    }
+    return render(request,'accounts/vendor_dashboard.html',context)
 
 
 def activate(request, uidb64, token):
