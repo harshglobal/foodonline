@@ -1,0 +1,47 @@
+{
+    "datasource": {
+        "sourcename": "openstreetmap",
+        "attribution": "© OpenStreetMap contributors",
+        "license": "Open Database License",
+        "url": "https://www.openstreetmap.org/copyright"
+    },
+    "name": "Chhatrapati Shivaji Maharaj Terminus - CSMT",
+    "country": "India",
+    "country_code": "in",
+    "state": "Maharashtra",
+    "county": "Mumbai City",
+    "city": "Mumbai",
+    "postcode": "400038",
+    "district": "Zone 1",
+    "neighbourhood": "Bori Bunder",
+    "suburb": "A Ward",
+    "street": "CSMT",
+    "lon": 72.8354116,
+    "lat": 18.9398641,
+    "state_code": "MH",
+    "formatted": "Chhatrapati Shivaji Maharaj Terminus - CSMT, CSMT, A Ward, Mumbai - 400038, MH, India",
+    "address_line1": "Chhatrapati Shivaji Maharaj Terminus - CSMT",
+    "address_line2": "CSMT, A Ward, Mumbai - 400038, MH, India",
+    "timezone": {
+        "name": "Asia/Kolkata",
+        "offset_STD": "+05:30",
+        "offset_STD_seconds": 19800,
+        "offset_DST": "+05:30",
+        "offset_DST_seconds": 19800,
+        "abbreviation_STD": "IST",
+        "abbreviation_DST": "IST"
+    },
+    "result_type": "amenity",
+    "rank": {
+        "importance": 0.4560803419219557,
+        "confidence": 1,
+        "match_type": "full_match"
+    },
+    "place_id": "51bd2c376277355240593a2f04ef9af03240f00103f901d5474ea201000000c0020192032b43686861747261706174692053686976616a69204d61686172616a205465726d696e7573202d2043534d54",
+    "bbox": {
+        "lon1": 72.8304116,
+        "lat1": 18.9348641,
+        "lon2": 72.8404116,
+        "lat2": 18.9448641
+    }
+}

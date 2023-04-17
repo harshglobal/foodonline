@@ -18,6 +18,8 @@ def vprofile(request):
     if request.method == 'POST':
         profile_form = UserProfileForm(request.POST,request.FILES,instance=profile)
         vendor_form = VendorForm(request.POST,request.FILES,instance=vendor)
+        profile_form.address = request.POST.get('address')
+        
 
         if profile_form.is_valid() and vendor_form.is_valid():
             profile_form.save()
